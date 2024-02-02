@@ -1,0 +1,36 @@
+GET http://localhost:3000/assets
+
+###
+
+POST http://localhost:3000/assets
+Content-Type: application/json
+
+{
+  "id": "btc",
+  "symbol": "BTC"
+}
+
+###
+
+GET http://localhost:3000/orders
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "asset_id": "btc",
+  "price": 0.00125
+}
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "asset_id": "usd",
+  "asset_symbol": "USD",
+  "price": 1400
+}
